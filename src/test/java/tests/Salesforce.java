@@ -19,10 +19,8 @@ public class Salesforce {
         driver.findElement(By.id("username")).sendKeys("aqa1@mailinator.com");
         driver.findElement(By.id("password")).sendKeys("Password02");
         driver.findElement(By.id("Login")).click();
-        CarePlanCreationPage carePlanCreationPageTextFeald = new CarePlanCreationPage(driver);
-        carePlanCreationPageTextFeald.createPlan();
-        CarePlanCreationPage carePlanCreationPageTextArea = new CarePlanCreationPage(driver);
-        carePlanCreationPageTextArea.createPlanArea();
+        CarePlanCreationPage carePlanCreationPage = new CarePlanCreationPage(driver);
+        carePlanCreationPage.createPlan();
         driver.quit();
     }
 }
