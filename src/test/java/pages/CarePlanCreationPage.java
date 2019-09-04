@@ -1,5 +1,6 @@
 package pages;
 
+import elements.TextArea;
 import elements.TextField;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -25,5 +26,17 @@ public class CarePlanCreationPage {
         new TextField("Bath/Shower Assist Provided By Name", driver).typeText("test");
         new TextField("Shopping Problem Managing Tips", driver).typeText("test");
         new TextField("Equipment Used Other Tips", driver).typeText("test");
+    }
+
+    public void createPlanArea() {
+        new TextArea("Cultural Considerations", driver).typeText("test");
+        new TextArea("Caregiver and Consumer Strengths", driver).typeText("test");
+        new TextArea("Important Health/Medical Considerations", driver).typeText("test");
+        new TextArea("Health Directive Comments", driver).typeText("test");
+        new TextArea("Bed Positioning Comments", driver).typeText("test");
+        new TextArea("Moving/Transferring Comments", driver).typeText("test");
+        new TextArea("Walking/Ambulation Comments", driver).typeText("test");
+        new TextArea("Getting Dressed Comments", driver).typeText("test");
+        new TextArea("Eating/Drinking Comments", driver).typeText("test");
     }
 }
