@@ -24,9 +24,8 @@ public class Salesforce {
         driver.quit();
     }
 
-
     @Test
-    public void openSalesforce2() {
+    public void openSalesforceTextArea() {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/webdrivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().timeouts().implicitlyWait(32, TimeUnit.SECONDS);
