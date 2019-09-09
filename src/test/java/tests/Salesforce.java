@@ -1,5 +1,6 @@
 package tests;
 
+import models.CarePlan;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,8 +20,9 @@ public class Salesforce {
         driver.findElement(By.id("username")).sendKeys("aqa1@mailinator.com");
         driver.findElement(By.id("password")).sendKeys("Password02");
         driver.findElement(By.id("Login")).click();
-        CarePlanCreationPage carePlanCreationPage = new CarePlanCreationPage(driver);
+      /*  CarePlan carePlan = CarePlan.builder();
+
         carePlanCreationPage.createPlan();
-        driver.quit();
+        driver.quit();*/
     }
 }
