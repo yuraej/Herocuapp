@@ -7,10 +7,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TextArea {
-    private WebElement element;
-    private WebDriver driver;
-    private WebDriverWait wait;
-    private String label;
+    WebElement element;
+    WebDriver driver;
+    WebDriverWait wait;
+    String label;
 
     public TextArea(String label, WebDriver driver) {
         this.driver = driver;
